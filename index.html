@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Matt Farmer AI - AI Marketing Expert</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(135deg, #0c0c0c 0%, #1a1a2e 50%, #16213e 100%);
+            color: #fff;
+            overflow-x: hidden;
+        }
+        
+        .galaxy-bg {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: url('https://static.scientificamerican.com/dam/m/265cc9dcfcb0981e/original/spiral_galaxy_ngc_3982.jpg?m=1746735819.123') center/cover;
+            opacity: 0.1;
+            z-index: -1;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        .hero {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            position: relative;
+        }
+        
+        .hero-content h1 {
+            font-size: 4rem;
+            background: linear-gradient(45deg, #00d4ff, #ff00ff, #ffff00);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin-bottom: 20px;
+            animation: glow 2s ease-in-out infinite alternate;
+        }
+        
+        @keyframes glow {
+            from { text-shadow: 0 0 20px #00d4ff; }
+            to { text-shadow: 0 0 30px #ff00ff, 0 0 40px #ffff00; }
+        }
+        
+        .profile-img {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            border: 4px solid #00d4ff;
+            margin: 20px auto;
+            object-fit: cover;
+            transition: transform 0.3s ease;
+        }
+        
+        .profile-img:hover {
+            transform: scale(1.1) rotate(5deg);
+        }
+        
+        .section {
+            padding: 80px 0;
+            margin: 40px 0;
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(10px);
+            border-radius: 20px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        
+        .section h2 {
+            font-size: 2.5rem;
+            text-align: center;
+            margin-bottom: 40px;
+            color: #00d4ff;
+        }
+        
+        .stats {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            margin: 40px 0;
+        }
+        
+        .stat-card {
+            background: linear-gradient(135deg, #1a1a2e, #16213e);
+            padding: 30px;
+            border-radius: 15px;
+            text-align: center;
+            border: 2px solid transparent;
+            transition: all 0.3s ease;
+        }
+        
+        .stat-card:hover {
+            border-color: #00d4ff;
+            transform: translateY(-10px);
+            box-shadow: 0 20px 40px rgba(0, 212, 255, 0.3);
+        }
+        
+        .video-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+        
+        .video-card {
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 15px;
+            overflow: hidden;
+            transition: transform 0.3s ease;
+        }
+        
+        .video-card:hover {
+            transform: scale(1.05);
+        }
+        
+        .video-thumbnail {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+        
+        .video-info {
+            padding: 20px;
+        }
+        
+        .video-title {
+            font-size: 1.1rem;
+            margin-bottom: 10px;
+            color: #fff;
+        }
+        
+        .footer {
+            text-align: center;
+            padding: 40px 0;
+            background: rgba(0, 0, 0, 0.5);
+        }
+        
+        .social-link {
+            display: inline-block;
+            padding: 15px 30px;
+            background: linear-gradient(45deg, #00d4ff, #ff00ff);
+            color: white;
+            text-decoration: none;
+            border-radius: 50px;
+            margin: 10px;
+            transition: all 0.3s ease;
+        }
+        
+        .social-link:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 30px rgba(0, 212, 255, 0.4);
+        }
+        
+        @media (max-width: 768px) {
+            .hero-content h1 { font-size: 2.5rem; }
+            .profile-img { width: 150px; height: 150px; }
+            .section { padding: 40px 20px; }
+        }
+    </style>
+</head>
+<body>
+    <div class="galaxy-bg"></div>
+    
+    <div class="container">
+        <section class="hero">
+            <div class="hero-content">
+                <h1>Matt Farmer AI</h1>
+                <img src="https://pbs.twimg.com/media/G4LUYiAXkAE6-jd.jpg" alt="Matt Farmer AI" class="profile-img">
+                <p style="font-size: 1.5rem; margin-top: 20px;">AI Marketing Expert & Digital Innovation Pioneer</p>
+            </div>
+        </section>
+        
+        <section class="section">
+            <h2>Social Media Presence</h2>
+            <div class="stats">
+                <div class="stat-card">
+                    <h3>TikTok</h3>
+                    <p>720+ Videos</p>
+                    <p>30K Avg Views</p>
+                </div>
+                <div class="stat-card">
+                    <h3>X (Twitter)</h3>
+                    <p>@mattfarmerai</p>
+                    <p>AI Content Creator</p>
+                </div>
+                <div class="stat-card">
+                    <h3>YouTube</h3>
+                    <p>Latest AI Tools</p>
+                    <p>Video Tutorials</p>
+                </div>
+            </div>
+        </section>
+        
+        <section class="section">
+            <h2>About Me</h2>
+            <p style="font-size: 1.2rem; line-height: 1.8; text-align: center; max-width: 800px; margin: 0 auto;">
+                I'm Matt Farmer, a digital marketing expert and AI enthusiast who has been at the forefront of technological innovation since building my first website in sixth grade. Known as the "digital MacGyver," I've managed high-profile marketing campaigns for the Olympics, UEFA, and Tiger Woods. Now, I focus on my proprietary "IP to AI" framework, converting human expertise into scalable AI systems. As CEO and co-founder of XAgency, I help businesses achieve hero-level results through AI automation and marketing innovation.
+            </p>
+        </section>
+        
+        <section class="section">
+            <h2>Latest YouTube Videos</h2>
+            <div class="video-grid">
+                <div class="video-card">
+                    <img src="https://img.youtube.com/vi/BMZTXnr0NvU/maxresdefault.jpg" alt="Type AI Video" class="video-thumbnail">
+                    <div class="video-info">
+                        <h3 class="video-title">Type AI's Autocomplete Predicts Your Next Thoughts</h3>
+                        <a href="https://www.youtube.com/watch?v=BMZTXnr0NvU" target="_blank" style="color: #00d4ff;">Watch Video</a>
+                    </div>
+                </div>
+                <div class="video-card">
+                    <img src="https://img.youtube.com/vi/s9l_H9Tuc74/maxresdefault.jpg" alt="AI Video Generator Comparison" class="video-thumbnail">
+                    <div class="video-info">
+                        <h3 class="video-title">AI Video Generator Comparison: VEO-3 vs MidJourney</h3>
+                        <a href="https://www.youtube.com/watch?v=s9l_H9Tuc74" target="_blank" style="color: #00d4ff;">Watch Video</a>
+                    </div>
+                </div>
+                <div class="video-card">
+                    <img src="https://img.youtube.com/vi/XyYJU5SV434/maxresdefault.jpg" alt="MidJourney V1 Video" class="video-thumbnail">
+                    <div class="video-info">
+                        <h3 class="video-title">Testing MidJourney V1 Video Generator</h3>
+                        <a href="https://www.youtube.com/watch?v=XyYJU5SV434" target="_blank" style="color: #00d4ff;">Watch Video</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    
+    <footer class="footer">
+        <div class="container">
+            <h3>Connect With Me</h3>
+            <a href="https://www.linkedin.com/in/mattfarmerai/" target="_blank" class="social-link">LinkedIn</a>
+            <p style="margin-top: 20px;">&copy; 2025 Matt Farmer AI. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
